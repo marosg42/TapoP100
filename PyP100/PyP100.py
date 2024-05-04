@@ -35,7 +35,7 @@ class Device:
                     protocol.Initialize()
                     self.protocol = protocol
                 except:
-                    log.exception(
+                    log.info(
                         f"Failed to initialize protocol {protocol_class.__name__}"
                     )
         if not self.protocol:
